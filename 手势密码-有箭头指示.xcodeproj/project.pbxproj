@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B67E5CB2194405700B80C2B /* XCTheCircleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B67E5CA2194405700B80C2B /* XCTheCircleConfig.swift */; };
+		1B9C143221952B180072BD53 /* XCGesturesLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C143121952B180072BD53 /* XCGesturesLockView.swift */; };
+		1B9C143421953A540072BD53 /* XCGesturesInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C143321953A540072BD53 /* XCGesturesInfoView.swift */; };
+		1BAC656F21991E60002F1447 /* XCGestureSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC656E21991E60002F1447 /* XCGestureSettingVC.swift */; };
+		1BDE4D3021943002000636DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE4D2F21943002000636DB /* AppDelegate.swift */; };
+		1BDE4D3221943002000636DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE4D3121943002000636DB /* ViewController.swift */; };
+		1BDE4D3521943002000636DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BDE4D3321943002000636DB /* Main.storyboard */; };
+		1BDE4D3721943002000636DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDE4D3621943002000636DB /* Assets.xcassets */; };
+		1BDE4D3A21943002000636DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BDE4D3821943002000636DB /* LaunchScreen.storyboard */; };
+		1BDE4D4521943002000636DB /* __________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE4D4421943002000636DB /* __________Tests.swift */; };
+		1BDE4D5021943002000636DB /* __________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE4D4F21943002000636DB /* __________UITests.swift */; };
+		1BDE4D5F219430BB000636DB /* XCTheCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE4D5E219430BB000636DB /* XCTheCircleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BDE4D4121943002000636DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BDE4D2421943002000636DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BDE4D2B21943002000636DB;
+			remoteInfo = "手势密码-有箭头指示";
+		};
+		1BDE4D4C21943002000636DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BDE4D2421943002000636DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BDE4D2B21943002000636DB;
+			remoteInfo = "手势密码-有箭头指示";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B67E5CA2194405700B80C2B /* XCTheCircleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTheCircleConfig.swift; sourceTree = "<group>"; };
+		1B9C143121952B180072BD53 /* XCGesturesLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGesturesLockView.swift; sourceTree = "<group>"; };
+		1B9C143321953A540072BD53 /* XCGesturesInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGesturesInfoView.swift; sourceTree = "<group>"; };
+		1BAC656E21991E60002F1447 /* XCGestureSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGestureSettingVC.swift; sourceTree = "<group>"; };
+		1BDE4D2C21943002000636DB /* 手势密码-有箭头指示.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "手势密码-有箭头指示.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDE4D2F21943002000636DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BDE4D3121943002000636DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BDE4D3421943002000636DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BDE4D3621943002000636DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BDE4D3921943002000636DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BDE4D3B21943002000636DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BDE4D4021943002000636DB /* 手势密码-有箭头指示Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "手势密码-有箭头指示Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDE4D4421943002000636DB /* __________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "__________Tests.swift"; sourceTree = "<group>"; };
+		1BDE4D4621943002000636DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BDE4D4B21943002000636DB /* 手势密码-有箭头指示UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "手势密码-有箭头指示UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDE4D4F21943002000636DB /* __________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "__________UITests.swift"; sourceTree = "<group>"; };
+		1BDE4D5121943002000636DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BDE4D5E219430BB000636DB /* XCTheCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTheCircleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BDE4D2921943002000636DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDE4D3D21943002000636DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDE4D4821943002000636DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BDE4D2321943002000636DB = {
+			isa = PBXGroup;
+			children = (
+				1BDE4D2E21943002000636DB /* 手势密码-有箭头指示 */,
+				1BDE4D4321943002000636DB /* 手势密码-有箭头指示Tests */,
+				1BDE4D4E21943002000636DB /* 手势密码-有箭头指示UITests */,
+				1BDE4D2D21943002000636DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BDE4D2D21943002000636DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BDE4D2C21943002000636DB /* 手势密码-有箭头指示.app */,
+				1BDE4D4021943002000636DB /* 手势密码-有箭头指示Tests.xctest */,
+				1BDE4D4B21943002000636DB /* 手势密码-有箭头指示UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BDE4D2E21943002000636DB /* 手势密码-有箭头指示 */ = {
+			isa = PBXGroup;
+			children = (
+				1BDE4D5D2194304A000636DB /* XCGesturesPassword */,
+				1BDE4D2F21943002000636DB /* AppDelegate.swift */,
+				1BDE4D3121943002000636DB /* ViewController.swift */,
+				1BDE4D3321943002000636DB /* Main.storyboard */,
+				1BDE4D3621943002000636DB /* Assets.xcassets */,
+				1BDE4D3821943002000636DB /* LaunchScreen.storyboard */,
+				1BDE4D3B21943002000636DB /* Info.plist */,
+			);
+			path = "手势密码-有箭头指示";
+			sourceTree = "<group>";
+		};
+		1BDE4D4321943002000636DB /* 手势密码-有箭头指示Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1BDE4D4421943002000636DB /* __________Tests.swift */,
+				1BDE4D4621943002000636DB /* Info.plist */,
+			);
+			path = "手势密码-有箭头指示Tests";
+			sourceTree = "<group>";
+		};
+		1BDE4D4E21943002000636DB /* 手势密码-有箭头指示UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BDE4D4F21943002000636DB /* __________UITests.swift */,
+				1BDE4D5121943002000636DB /* Info.plist */,
+			);
+			path = "手势密码-有箭头指示UITests";
+			sourceTree = "<group>";
+		};
+		1BDE4D5D2194304A000636DB /* XCGesturesPassword */ = {
+			isa = PBXGroup;
+			children = (
+				1BDE4D5E219430BB000636DB /* XCTheCircleView.swift */,
+				1B67E5CA2194405700B80C2B /* XCTheCircleConfig.swift */,
+				1B9C143121952B180072BD53 /* XCGesturesLockView.swift */,
+				1B9C143321953A540072BD53 /* XCGesturesInfoView.swift */,
+				1BAC656E21991E60002F1447 /* XCGestureSettingVC.swift */,
+			);
+			path = XCGesturesPassword;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BDE4D2B21943002000636DB /* 手势密码-有箭头指示 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BDE4D5421943002000636DB /* Build configuration list for PBXNativeTarget "手势密码-有箭头指示" */;
+			buildPhases = (
+				1BDE4D2821943002000636DB /* Sources */,
+				1BDE4D2921943002000636DB /* Frameworks */,
+				1BDE4D2A21943002000636DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "手势密码-有箭头指示";
+			productName = "手势密码-有箭头指示";
+			productReference = 1BDE4D2C21943002000636DB /* 手势密码-有箭头指示.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BDE4D3F21943002000636DB /* 手势密码-有箭头指示Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BDE4D5721943002000636DB /* Build configuration list for PBXNativeTarget "手势密码-有箭头指示Tests" */;
+			buildPhases = (
+				1BDE4D3C21943002000636DB /* Sources */,
+				1BDE4D3D21943002000636DB /* Frameworks */,
+				1BDE4D3E21943002000636DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BDE4D4221943002000636DB /* PBXTargetDependency */,
+			);
+			name = "手势密码-有箭头指示Tests";
+			productName = "手势密码-有箭头指示Tests";
+			productReference = 1BDE4D4021943002000636DB /* 手势密码-有箭头指示Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BDE4D4A21943002000636DB /* 手势密码-有箭头指示UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BDE4D5A21943002000636DB /* Build configuration list for PBXNativeTarget "手势密码-有箭头指示UITests" */;
+			buildPhases = (
+				1BDE4D4721943002000636DB /* Sources */,
+				1BDE4D4821943002000636DB /* Frameworks */,
+				1BDE4D4921943002000636DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BDE4D4D21943002000636DB /* PBXTargetDependency */,
+			);
+			name = "手势密码-有箭头指示UITests";
+			productName = "手势密码-有箭头指示UITests";
+			productReference = 1BDE4D4B21943002000636DB /* 手势密码-有箭头指示UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BDE4D2421943002000636DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "小崔";
+				TargetAttributes = {
+					1BDE4D2B21943002000636DB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					1BDE4D3F21943002000636DB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BDE4D2B21943002000636DB;
+					};
+					1BDE4D4A21943002000636DB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BDE4D2B21943002000636DB;
+					};
+				};
+			};
+			buildConfigurationList = 1BDE4D2721943002000636DB /* Build configuration list for PBXProject "手势密码-有箭头指示" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BDE4D2321943002000636DB;
+			productRefGroup = 1BDE4D2D21943002000636DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BDE4D2B21943002000636DB /* 手势密码-有箭头指示 */,
+				1BDE4D3F21943002000636DB /* 手势密码-有箭头指示Tests */,
+				1BDE4D4A21943002000636DB /* 手势密码-有箭头指示UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BDE4D2A21943002000636DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDE4D3A21943002000636DB /* LaunchScreen.storyboard in Resources */,
+				1BDE4D3721943002000636DB /* Assets.xcassets in Resources */,
+				1BDE4D3521943002000636DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDE4D3E21943002000636DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDE4D4921943002000636DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BDE4D2821943002000636DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9C143221952B180072BD53 /* XCGesturesLockView.swift in Sources */,
+				1BDE4D3221943002000636DB /* ViewController.swift in Sources */,
+				1BDE4D5F219430BB000636DB /* XCTheCircleView.swift in Sources */,
+				1BAC656F21991E60002F1447 /* XCGestureSettingVC.swift in Sources */,
+				1B9C143421953A540072BD53 /* XCGesturesInfoView.swift in Sources */,
+				1B67E5CB2194405700B80C2B /* XCTheCircleConfig.swift in Sources */,
+				1BDE4D3021943002000636DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDE4D3C21943002000636DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDE4D4521943002000636DB /* __________Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDE4D4721943002000636DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDE4D5021943002000636DB /* __________UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BDE4D4221943002000636DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BDE4D2B21943002000636DB /* 手势密码-有箭头指示 */;
+			targetProxy = 1BDE4D4121943002000636DB /* PBXContainerItemProxy */;
+		};
+		1BDE4D4D21943002000636DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BDE4D2B21943002000636DB /* 手势密码-有箭头指示 */;
+			targetProxy = 1BDE4D4C21943002000636DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BDE4D3321943002000636DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BDE4D3421943002000636DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BDE4D3821943002000636DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BDE4D3921943002000636DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BDE4D5221943002000636DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BDE4D5321943002000636DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BDE4D5521943002000636DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "手势密码-有箭头指示/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fsadfadsff.----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BDE4D5621943002000636DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "手势密码-有箭头指示/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fsadfadsff.----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BDE4D5821943002000636DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "手势密码-有箭头指示Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fsadfadsff.----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/手势密码-有箭头指示.app/手势密码-有箭头指示";
+			};
+			name = Debug;
+		};
+		1BDE4D5921943002000636DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "手势密码-有箭头指示Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fsadfadsff.----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/手势密码-有箭头指示.app/手势密码-有箭头指示";
+			};
+			name = Release;
+		};
+		1BDE4D5B21943002000636DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "手势密码-有箭头指示UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fsadfadsff.----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "手势密码-有箭头指示";
+			};
+			name = Debug;
+		};
+		1BDE4D5C21943002000636DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "手势密码-有箭头指示UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fsadfadsff.----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "手势密码-有箭头指示";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BDE4D2721943002000636DB /* Build configuration list for PBXProject "手势密码-有箭头指示" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDE4D5221943002000636DB /* Debug */,
+				1BDE4D5321943002000636DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BDE4D5421943002000636DB /* Build configuration list for PBXNativeTarget "手势密码-有箭头指示" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDE4D5521943002000636DB /* Debug */,
+				1BDE4D5621943002000636DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BDE4D5721943002000636DB /* Build configuration list for PBXNativeTarget "手势密码-有箭头指示Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDE4D5821943002000636DB /* Debug */,
+				1BDE4D5921943002000636DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BDE4D5A21943002000636DB /* Build configuration list for PBXNativeTarget "手势密码-有箭头指示UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDE4D5B21943002000636DB /* Debug */,
+				1BDE4D5C21943002000636DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BDE4D2421943002000636DB /* Project object */;
+}
