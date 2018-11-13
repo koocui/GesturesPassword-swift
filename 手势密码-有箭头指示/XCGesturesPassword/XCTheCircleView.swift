@@ -36,7 +36,16 @@ class XCTheCircleView: UIView {
         }
     }
     /** 类型 */
-    var type:XCTheCircleViewType?
+    var _type:XCTheCircleViewType?
+    var type:XCTheCircleViewType?{
+        get{
+            return _type
+        }
+        set{
+            _type = newValue
+            self.setNeedsDisplay()
+        }
+    }
     /** 是否有箭头 默认YES */
     var arrow:Bool = isArrow
     /** 角度 */
@@ -71,7 +80,10 @@ class XCTheCircleView: UIView {
         // 画内实心圆
         self.drawInCircleWithCtx(ctx:ctx!,rect:rect)
         // 画三角形
-        self.drawTrangleWithCtx(ctx: ctx! , rect:rect)   
+        if _type != XCTheCircleViewType.XCTheCircleViewTypeInfo{
+            self.drawTrangleWithCtx(ctx: ctx! , rect:rect)   
+        }
+      
     }
     
 }
@@ -134,10 +146,18 @@ extension XCTheCircleView{
         var color:UIColor?
         switch _state {
         case .XCTheCircleViewStateNormal?:
-            color = circleOutNormalBorderColor;
+            if _type == XCTheCircleViewType.XCTheCircleViewTypeInfo{
+                color = UIColor.lightGray //信息指示的外圈
+            }else{
+                color = circleOutNormalBorderColor;
+            }
             break;
         case .XCTheCircleViewStateSelected?:
-            color = circleOutSelectedBorderColor;
+             if _type == XCTheCircleViewType.XCTheCircleViewTypeInfo{
+                  color = UIColor.lightGray //信息指示的外圈
+             }else{
+                  color = circleOutSelectedBorderColor
+             }
             break;
         case .XCTheCircleViewStateError?:
             color = circleOutErrorBorderColor;

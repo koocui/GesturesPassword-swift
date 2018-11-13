@@ -91,6 +91,7 @@ class XCGesturesLockView: UIView {
         self.backgroundColor = MybackgroundColor
         for i in 0..<9{
             let circle = XCTheCircleView()
+            circle.type = XCTheCircleViewType.XCTheCircleViewTypeGesture
             circle.tag = i + 1;
             self.addSubview(circle)
         }
@@ -217,7 +218,7 @@ class XCGesturesLockView: UIView {
         for (_,circle) in self.subviews.enumerated() {
             if circle.frame.contains(point){
                 centerCircle = (circle as? XCTheCircleView)!
-                centerCircle.tag = 10
+                centerCircle.tag = circle.tag
             }
         }
         if !self.selectedArray.contains(centerCircle){
@@ -227,6 +228,23 @@ class XCGesturesLockView: UIView {
         return centerCircle
     }
     
+    
+    
+    
+    func changeCirclesWithSelectedArray(selectedArray:[XCTheCircleView],state:XCTheCircleViewState)->(){
+//        if selectedArray.count > 0 {
+//            for (_,circle) in self.subviews.enumerated(){
+//                (circle as! XCTheCircleView).state = state
+//            }
+//        }
+        for selectedCircle in selectedArray {
+            for Circle in self.subviews {
+                if Circle.tag == selectedCircle.tag{
+                    (Circle as! XCTheCircleView).state = state
+                }
+            }
+        }
+    }
 }
 
 

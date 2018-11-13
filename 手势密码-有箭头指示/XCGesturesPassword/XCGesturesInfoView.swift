@@ -9,18 +9,15 @@
 import UIKit
 
 class XCGesturesInfoView: UIView {
-  
-    
-   
     override func draw(_ rect: CGRect) {
         // Drawing code
     }
-  
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = MybackgroundColor
         for i in 0..<9 {
             let  circle:XCTheCircleView  = XCTheCircleView()
+            circle.state = XCTheCircleViewState.XCTheCircleViewStateNormal
             circle.type = XCTheCircleViewType.XCTheCircleViewTypeInfo
             circle.tag = i+1;
             self.addSubview(circle)

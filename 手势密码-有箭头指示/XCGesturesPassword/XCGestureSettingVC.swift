@@ -36,7 +36,8 @@ class XCGestureSettingVC: UIViewController {
     func handleGesture(selectedArray:[XCTheCircleView],selectedValue:String) ->(){
         print("selectedValue->\(selectedValue)")
         if selectedValue.count < circleLeastNumber{
-            print("输入点数过少")
+            print("输入点数过少");
+            self.lockView.changeCirclesWithSelectedArray(selectedArray: selectedArray,state:XCTheCircleViewState.XCTheCircleViewStateError)
         }else if self.firstSelectedValue.count < circleLeastNumber{
             self.firstSelectedValue = selectedValue
             self.infoView.changeCirclesWithSelectedArray(selectedArray: selectedArray)
