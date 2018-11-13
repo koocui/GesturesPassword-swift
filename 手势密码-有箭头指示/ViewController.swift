@@ -26,6 +26,12 @@ class ViewController: UIViewController {
     }
     
     @objc func gotoSettingGesture(){
+        
+        let defaults = UserDefaults.standard
+        let keyString = defaults.string(forKey: KEYUSERDEFAULTVALUE)
+        if keyString != ""{
+            print("keyString->\(String(describing: keyString))")
+        }
         self.present(XCGestureSettingVC(), animated: true, completion: nil)
     }
 

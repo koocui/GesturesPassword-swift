@@ -36,6 +36,7 @@ let trangleNormalColor = UIColor.clear
 let trangleSelectedColor = XCRGBA(r: 35, g: 180, b: 250, a: 1)
 /** 指示三角形错误状态颜色 */
 let trangleErrorColor = XCRGBA(r: 255, g: 0, b: 0, a: 1)
+//let trangleErrorColor = UIColor.clear
 
 /** 连线选中状态颜色 */
 let lineSelectedColor = XCRGBA(r: 35, g: 180, b: 250, a: 1)
@@ -67,6 +68,12 @@ let circleInfoRadius:CGFloat = 10
 let lockViewMargin:CGFloat = 30
 /** 是否带有箭头 默认有 */
 let isArrow = true
+
+/** 保存手势密码到本地 */
+let KEYUSERDEFAULTVALUE = "KEYUSERDEFAULTVALUE"
+
+
+
 class XCTheCircleConfig: NSObject {
 
  

@@ -232,18 +232,25 @@ class XCGesturesLockView: UIView {
     
     
     func changeCirclesWithSelectedArray(selectedArray:[XCTheCircleView],state:XCTheCircleViewState)->(){
-//        if selectedArray.count > 0 {
-//            for (_,circle) in self.subviews.enumerated(){
-//                (circle as! XCTheCircleView).state = state
-//            }
-//        }
-        for selectedCircle in selectedArray {
-            for Circle in self.subviews {
-                if Circle.tag == selectedCircle.tag{
-                    (Circle as! XCTheCircleView).state = state
-                }
+        if selectedArray.count > 0 {
+            for (_,circle) in self.subviews.enumerated(){
+                (circle as! XCTheCircleView).state = XCTheCircleViewState.XCTheCircleViewStateNormal
             }
         }
+        for selectedCircle in selectedArray {
+//            if selectedCircle == selectedArray[selectedArray.count-1]{
+//                //最后一个园需要去掉箭头显示
+//                selectedCircle.state = XCTheCircleViewState.XCTheCircleViewStateLastOneError
+//            }else{
+                for Circle in self.subviews {
+                    if Circle.tag == selectedCircle.tag{
+                        (Circle as! XCTheCircleView).state = state
+                    }
+                }
+//            }
+          
+        }
+       
     }
 }
 

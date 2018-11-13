@@ -41,8 +41,12 @@ class XCGestureSettingVC: UIViewController {
         }else if self.firstSelectedValue.count < circleLeastNumber{
             self.firstSelectedValue = selectedValue
             self.infoView.changeCirclesWithSelectedArray(selectedArray: selectedArray)
-        }else if selectedValue == self.firstSelectedValue {
-            
+        }else if selectedValue == self.firstSelectedValue {//设置成功,保存到本地
+            let defaults = UserDefaults.standard
+            defaults.set(self.firstSelectedValue, forKey: KEYUSERDEFAULTVALUE)
+            DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+                self.dismiss(animated: true, completion: nil)
+            })
         }else {
             self.firstSelectedValue = ""
             self.infoView .changeCirclesWithSelectedArray(selectedArray: [XCTheCircleView]())
